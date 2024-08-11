@@ -1,0 +1,130 @@
+/* Vous pouvez changer la police à n'importe quelle autre installée */
+body {
+    font-family: "allBeyondworldv3";
+}
+
+/* Couleur du texte */
+.markup_f8f345 {
+    color: #efefef;
+}
+
+/* Remplacez toutes les couleurs bleues par des couleurs orange */
+[aria-label="Send a gift"], /* send gift button */
+[class^=sidebar_] [class^=headerChildren_], /* server dropdown arrow */
+[aria-label="Create Invite"], /* invite button on channel list */
+[aria-label="Invite to Server"], /* invite button on channel list */
+.vc-membercount-online-dot,
+.vc-membercount-total-dot, /* membercount dots */
+[class^=toolbar_] [href="https://support.discord.com"], /* support in toolbar */
+[class^=toolbar_] [aria-label="Notification Settings"],
+[class^='nowPlayingColumn'],
+[class*=hasThread_]::after /* line in message going into thread preview */
+{ display: none !important; }
+.vc-membercount-total::before /* add a slash im place of replaced dots */
+{ content: "/";
+  margin: 0 1ch; }
+
+/* Barre de notification qui apparaît en haut */
+.notice__5fd4c {
+    border-radius: 16px;
+    line-height: 28px;
+    margin: 0px 12px 5px 4px;
+}
+.closeButton__90904 {
+    top: -4px;
+}
+.button__33db6 {
+    height: 22px;
+    top: 3px;
+}
+
+/* Masquer */
+/* Masquer la barre de message si vous ne pouvez pas parler */
+.form_d8a4a1:has(.channelTextAreaDisabled_d0f0e8) {
+  display: none;
+}
+
+/* Panneau de sélection d'emoji */
+#emoji-picker-tab-panel [class^=diversitySelector_],
+/* Séparateur dans le sélecteur de statut */
+#account[class^=menu_] [class^=submenu_] [class^=separator_],
+/* Descriptions dans le sélecteur de statut */
+[class^=statusItem_] > [class^=description_],
+/* Bouton de la boutique sur les profils de bot */
+button:has([class^=storeBtn_]),
+/* Liens sociaux dans les paramètres */
+nav > [role=tablist] > [class^=socialLinks_],
+/* Paramètres de Hypesquad */
+[data-tab-id^="Hypesquad"],
+/* Paramètres expérimentaux supplémentaires */
+[data-tab-id="Text Component"],
+[data-tab-id="Text Playground"],
+[data-tab-id="Payment Flow Modals"],
+[data-tab-id="Dismissible Content Options"],
+[data-tab-id="Hotspot Options"],
+[data-tab-id="Profile Effects Preview Tool"],
+/* Bannière du serveur */
+[class*=animatedContainer_]:has([class*=bannerImage_]),
+/* Espace cliquable de la bannière du serveur */
+[class*=animatedBannerHoverLayer_],
+/* Espace de la bannière du serveur */
+[style="height: 84px;"],
+/* Séparateur dans le popout du serveur */
+#guild-header-popout [class^=separator_],
+/* Guide du serveur */
+[data-list-item-id^="channels___home-tab-"],
+/* Menu contextuel utilisateur : appel */
+#user-context-call,
+/* Menu contextuel utilisateur : ajouter un surnom d'ami */
+#user-context-add-friend-nickname,
+/* Séparateurs dans la colonne des canaux */
+#channels [class^=sectionDivider_],
+/* Bouton d'aide */
+[href="https://support.discord.com"],
+/* Bouton de boîte de réception lorsqu'il n'y a pas de notifications */
+[class^=recentsIcon_]:not(:has([class^=iconBadge_], [class*=recentMentionsPopout_])),
+/* Séparateur dans le menu contextuel des actions de canal */
+#channel-context [class^=separator_],
+/* Séparateur dans le menu contextuel des actions de message */
+#message-actions [class^=separator_],
+/* Message de lecture */
+#message-tts,
+#message-actions-tts,
+/* ID du message dans les actions de message */
+[aria-label="Message Actions"] [aria-label="Copy Message ID"],
+/* Basculer CSS rapide dans la boîte à outils VC */
+#vc-toolbox-vc-toolbox-quickcss-toggle,
+/* "Bienvenue dans le canal" */
+[class^=chatContent_] [class^=container_]:has([class^=emptyChannelIcon_], [class^=inner_]),
+/* Centre familial */
+[aria-label="Family Center"],
+/* Serveurs découvrables */
+[data-list-id="guildsnav"]>[class^=scroller_]>[class^=listItem_]:has([aria-label*=Discoverable]),
+/* Événements */
+#channels [class^=containerDefault_]:has( [data-list-item-id^="channels___upcoming-events"]),
+/* Compte des membres dans l'icône du serveur en survol */
+.vc-membercount-tooltip,
+/* "Get started" */
+#channels [class^=progressBarContainer_]:has([style="background-color: var(--background-modifier-active);"]),
+/* "Next: read x" */
+[class^=chatContent_] [class^=container_]:has([class^=banner_]),
+/* Mini mutuals */
+[class^=mainContainer_][class*=profileMutuals_],
+/* Raccourci pour "Top Emojis In X" */
+#emoji-picker-tab-panel [data-list-item-id=NO_LIST___expression-guild-0],
+/* Supprimer les éléments "nouvel emoji" */
+#emoji-picker-tab-panel :is([class^=badgeLabel_], [class^=newlyAddedBadge]),
+/* "Top Emojis In X" */
+#emoji-picker-tab-panel [class^=categorySection_]:has([d="M6.278 3.00098H3C2.447 3.00098 2 3.44898 2 4.00098V8.00098C2 8.30498 2.139 8.59298 2.375 8.78198L7.304 12.724C8.206 13.86 9.51 14.659 11 14.911V16.001H9C8.447 16.001 8 16.449 8 17.001V20.001H7.5C7.22386 20.001 7 20.2248 7 20.501V21.501C7 21.7771 7.22386 22.001 7.5 22.001H16.5C16.7761 22.001 17 21.7771 17 21.501V20.501C17 20.2248 16.7761 20.001 16.5 20.001H16V17.001C16 16.449 15.553 16.001 15 16.001H13V14.911C14.49 14.659 15.794 13.86 16.696 12.724L21.625 8.78198C21.861 8.59298 22 8.30498 22 8.00098V4.00098C22 3.44898 21.553 3.00098 21 3.00098H17.722C17.375 2.40598 16.737 2.00098 16 2.00098H8C7.262 2.00098 6.625 2.40598 6.278 3.00098ZM20 5.00098V7.52098L17.994 9.12598C17.994 9.10435 17.9955 9.08348 17.997 9.06274C17.9985 9.04224 18 9.02185 18 9.00098V5.00098H20ZM6.006 9.12698L4 7.52098V5.00098H6V9.00098C6 9.02173 6.00147 9.042 6.00295 9.0625C6.00447 9.08349 6.006 9.10472 6.006 9.12698Z"]),
+/* Menu contextuel utilisateur : ajouter une note */
+#user-context-note,
+/* Notes */
+[class^=note_],
+/* Entête des notes dans le popout de profil */
+[class^=section_]:has([class^=note_]),
+
+/* Paramètres de notification dans l'entête du canal */
+[aria-label="Notification Settings"] 
+
+
+{display: none !important}
