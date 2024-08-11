@@ -1,33 +1,6 @@
-/* Primary Color Variables */
+@import url('https://DiscordStyles.github.io/DarkMatter/src/base.css');
+@import url('https://discordstyles.github.io/RadialStatus/dist/RadialStatus.css');
+
 :root {
-  --brand-experiment: #ffa500; /* Orange for the primary brand color */
-  --brand-experiment-560: #ff8c00; /* Slightly darker orange for hover effects */
-  --brand-experiment-400: #ffae42; /* Lighter orange for accent areas */
-}
-
-/* Text Colors */
-h1, h2, h3, h4, h5, h6, p, a, span, div {
-  color: #ffa500 !important; /* Force text to orange wherever it's originally the brand color */
-}
-
-/* Button Backgrounds */
-button, .button-1cRKG6 {
-  background-color: #ffa500 !important; /* Orange buttons */
-  border-color: #ff8c00 !important; /* Slightly darker orange for button borders */
-}
-
-/* Link Colors */
-a {
-  color: #ffae42 !important; /* Lighter orange for links */
-}
-
-/* Icons */
-svg path, .icon-22AiRD {
-  fill: #ffa500 !important; /* Orange icons */
-}
-
-/* Mentions and Highlights */
-.mention, .mention-1gcdLQ {
-  background-color: #ff8c00 !important; /* Highlight mentions with a darker orange */
-  color: #ffffff !important; /* Keep text readable */
+  --accent: 255,100,45;
 }
